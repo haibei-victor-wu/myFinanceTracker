@@ -13,6 +13,7 @@
 		D25DA8381D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25DA8361D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld */; };
 		D25DA83A1D32A380004FA4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8391D32A380004FA4AA /* Assets.xcassets */; };
 		D25DA83D1D32A380004FA4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25DA83B1D32A380004FA4AA /* LaunchScreen.storyboard */; };
+		D25DA8461D32A80C004FA4AA /* money_box.png in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8451D32A80C004FA4AA /* money_box.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D25DA8391D32A380004FA4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D25DA83C1D32A380004FA4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25DA83E1D32A380004FA4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D25DA8451D32A80C004FA4AA /* money_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money_box.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		D25DA82E1D32A380004FA4AA /* Final Project myFinanceTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D25DA8441D32A7E5004FA4AA /* Images */,
 				D25DA82F1D32A380004FA4AA /* AppDelegate.swift */,
 				D25DA8311D32A380004FA4AA /* ViewController.swift */,
 				D25DA8331D32A380004FA4AA /* Main.storyboard */,
@@ -65,6 +68,14 @@
 				D25DA8361D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld */,
 			);
 			path = "Final Project myFinanceTracker";
+			sourceTree = "<group>";
+		};
+		D25DA8441D32A7E5004FA4AA /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				D25DA8451D32A80C004FA4AA /* money_box.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +136,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25DA8461D32A80C004FA4AA /* money_box.png in Resources */,
 				D25DA83D1D32A380004FA4AA /* LaunchScreen.storyboard in Resources */,
 				D25DA83A1D32A380004FA4AA /* Assets.xcassets in Resources */,
 				D25DA8351D32A380004FA4AA /* Main.storyboard in Resources */,
