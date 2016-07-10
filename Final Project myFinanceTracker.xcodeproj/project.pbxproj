@@ -1,0 +1,310 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D25DA8301D32A380004FA4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DA82F1D32A380004FA4AA /* AppDelegate.swift */; };
+		D25DA8321D32A380004FA4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DA8311D32A380004FA4AA /* ViewController.swift */; };
+		D25DA8351D32A380004FA4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8331D32A380004FA4AA /* Main.storyboard */; };
+		D25DA8381D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25DA8361D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld */; };
+		D25DA83A1D32A380004FA4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8391D32A380004FA4AA /* Assets.xcassets */; };
+		D25DA83D1D32A380004FA4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25DA83B1D32A380004FA4AA /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D25DA82C1D32A380004FA4AA /* Final Project myFinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project myFinanceTracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D25DA82F1D32A380004FA4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D25DA8311D32A380004FA4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D25DA8341D32A380004FA4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D25DA8371D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Final_Project_myFinanceTracker.xcdatamodel; sourceTree = "<group>"; };
+		D25DA8391D32A380004FA4AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D25DA83C1D32A380004FA4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D25DA83E1D32A380004FA4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D25DA8291D32A380004FA4AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D25DA8231D32A380004FA4AA = {
+			isa = PBXGroup;
+			children = (
+				D25DA82E1D32A380004FA4AA /* Final Project myFinanceTracker */,
+				D25DA82D1D32A380004FA4AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D25DA82D1D32A380004FA4AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25DA82C1D32A380004FA4AA /* Final Project myFinanceTracker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D25DA82E1D32A380004FA4AA /* Final Project myFinanceTracker */ = {
+			isa = PBXGroup;
+			children = (
+				D25DA82F1D32A380004FA4AA /* AppDelegate.swift */,
+				D25DA8311D32A380004FA4AA /* ViewController.swift */,
+				D25DA8331D32A380004FA4AA /* Main.storyboard */,
+				D25DA8391D32A380004FA4AA /* Assets.xcassets */,
+				D25DA83B1D32A380004FA4AA /* LaunchScreen.storyboard */,
+				D25DA83E1D32A380004FA4AA /* Info.plist */,
+				D25DA8361D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld */,
+			);
+			path = "Final Project myFinanceTracker";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D25DA82B1D32A380004FA4AA /* Final Project myFinanceTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D25DA8411D32A380004FA4AA /* Build configuration list for PBXNativeTarget "Final Project myFinanceTracker" */;
+			buildPhases = (
+				D25DA8281D32A380004FA4AA /* Sources */,
+				D25DA8291D32A380004FA4AA /* Frameworks */,
+				D25DA82A1D32A380004FA4AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Final Project myFinanceTracker";
+			productName = "Final Project myFinanceTracker";
+			productReference = D25DA82C1D32A380004FA4AA /* Final Project myFinanceTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D25DA8241D32A380004FA4AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = cs2680;
+				TargetAttributes = {
+					D25DA82B1D32A380004FA4AA = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = D25DA8271D32A380004FA4AA /* Build configuration list for PBXProject "Final Project myFinanceTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D25DA8231D32A380004FA4AA;
+			productRefGroup = D25DA82D1D32A380004FA4AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D25DA82B1D32A380004FA4AA /* Final Project myFinanceTracker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D25DA82A1D32A380004FA4AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25DA83D1D32A380004FA4AA /* LaunchScreen.storyboard in Resources */,
+				D25DA83A1D32A380004FA4AA /* Assets.xcassets in Resources */,
+				D25DA8351D32A380004FA4AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D25DA8281D32A380004FA4AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D25DA8321D32A380004FA4AA /* ViewController.swift in Sources */,
+				D25DA8381D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld in Sources */,
+				D25DA8301D32A380004FA4AA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D25DA8331D32A380004FA4AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D25DA8341D32A380004FA4AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D25DA83B1D32A380004FA4AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D25DA83C1D32A380004FA4AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D25DA83F1D32A380004FA4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D25DA8401D32A380004FA4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D25DA8421D32A380004FA4AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Final Project myFinanceTracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cs2680.Final-Project-myFinanceTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D25DA8431D32A380004FA4AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Final Project myFinanceTracker/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "cs2680.Final-Project-myFinanceTracker";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D25DA8271D32A380004FA4AA /* Build configuration list for PBXProject "Final Project myFinanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25DA83F1D32A380004FA4AA /* Debug */,
+				D25DA8401D32A380004FA4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D25DA8411D32A380004FA4AA /* Build configuration list for PBXNativeTarget "Final Project myFinanceTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D25DA8421D32A380004FA4AA /* Debug */,
+				D25DA8431D32A380004FA4AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D25DA8361D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D25DA8371D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodel */,
+			);
+			currentVersion = D25DA8371D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodel */;
+			path = Final_Project_myFinanceTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D25DA8241D32A380004FA4AA /* Project object */;
+}
