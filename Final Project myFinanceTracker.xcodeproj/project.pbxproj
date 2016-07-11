@@ -14,7 +14,61 @@
 		D25DA83A1D32A380004FA4AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8391D32A380004FA4AA /* Assets.xcassets */; };
 		D25DA83D1D32A380004FA4AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25DA83B1D32A380004FA4AA /* LaunchScreen.storyboard */; };
 		D25DA8461D32A80C004FA4AA /* money_box.png in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8451D32A80C004FA4AA /* money_box.png */; };
+		D25DA8651D3354CD004FA4AA /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25DA85E1D335440004FA4AA /* Charts.framework */; };
+		D25DA8661D3354CD004FA4AA /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25DA85E1D335440004FA4AA /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D25DA85D1D335440004FA4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25DA8561D335440004FA4AA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 5BA8EC401A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+		D25DA85F1D335440004FA4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25DA8561D335440004FA4AA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A52C5C371BAC5CA400594CDD;
+			remoteInfo = "Charts-TV";
+		};
+		D25DA8611D335440004FA4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25DA8561D335440004FA4AA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65B3F5BF1C7370BE000983D0;
+			remoteInfo = "Charts-OSX";
+		};
+		D25DA8631D335440004FA4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25DA8561D335440004FA4AA /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 06AEE7A21BDC3F8B009875AE;
+			remoteInfo = ChartsTests;
+		};
+		D25DA8671D3354CD004FA4AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D25DA8561D335440004FA4AA /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 5BA8EC3F1A9D14DC00CE82E1;
+			remoteInfo = "Charts-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D25DA8691D3354CD004FA4AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D25DA8661D3354CD004FA4AA /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D25DA82C1D32A380004FA4AA /* Final Project myFinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project myFinanceTracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +80,7 @@
 		D25DA83C1D32A380004FA4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D25DA83E1D32A380004FA4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25DA8451D32A80C004FA4AA /* money_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money_box.png; sourceTree = "<group>"; };
+		D25DA8561D335440004FA4AA /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D25DA8651D3354CD004FA4AA /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +98,7 @@
 		D25DA8231D32A380004FA4AA = {
 			isa = PBXGroup;
 			children = (
+				D25DA8561D335440004FA4AA /* Charts.xcodeproj */,
 				D25DA82E1D32A380004FA4AA /* Final Project myFinanceTracker */,
 				D25DA82D1D32A380004FA4AA /* Products */,
 			);
@@ -78,6 +135,17 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		D25DA8571D335440004FA4AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D25DA85E1D335440004FA4AA /* Charts.framework */,
+				D25DA8601D335440004FA4AA /* Charts.framework */,
+				D25DA8621D335440004FA4AA /* Charts.framework */,
+				D25DA8641D335440004FA4AA /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,10 +156,12 @@
 				D25DA8281D32A380004FA4AA /* Sources */,
 				D25DA8291D32A380004FA4AA /* Frameworks */,
 				D25DA82A1D32A380004FA4AA /* Resources */,
+				D25DA8691D3354CD004FA4AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D25DA8681D3354CD004FA4AA /* PBXTargetDependency */,
 			);
 			name = "Final Project myFinanceTracker";
 			productName = "Final Project myFinanceTracker";
@@ -124,12 +194,49 @@
 			mainGroup = D25DA8231D32A380004FA4AA;
 			productRefGroup = D25DA82D1D32A380004FA4AA /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D25DA8571D335440004FA4AA /* Products */;
+					ProjectRef = D25DA8561D335440004FA4AA /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D25DA82B1D32A380004FA4AA /* Final Project myFinanceTracker */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D25DA85E1D335440004FA4AA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = D25DA85D1D335440004FA4AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D25DA8601D335440004FA4AA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = D25DA85F1D335440004FA4AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D25DA8621D335440004FA4AA /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = D25DA8611D335440004FA4AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D25DA8641D335440004FA4AA /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = D25DA8631D335440004FA4AA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D25DA82A1D32A380004FA4AA /* Resources */ = {
@@ -157,6 +264,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D25DA8681D3354CD004FA4AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Charts-iOS";
+			targetProxy = D25DA8671D3354CD004FA4AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D25DA8331D32A380004FA4AA /* Main.storyboard */ = {
@@ -265,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Final Project myFinanceTracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cs2680.Final-Project-myFinanceTracker";
@@ -276,6 +392,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Final Project myFinanceTracker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "cs2680.Final-Project-myFinanceTracker";

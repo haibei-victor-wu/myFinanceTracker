@@ -14,13 +14,56 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNp-VR-baA">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ml2-fB-usM" customClass="HorizontalBarChartView" customModule="Charts">
+                                        <rect key="frame" x="14" y="18" width="291" height="259"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="259" id="wJu-db-bfj"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hNZ-61-WfH" customClass="PieChartView" customModule="Charts">
+                                        <rect key="frame" x="15" y="285" width="291" height="273"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="273" id="ZEi-IV-4OI"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="ml2-fB-usM" firstAttribute="leading" secondItem="BNp-VR-baA" secondAttribute="leading" constant="14" id="D7v-IH-Vhp"/>
+                                    <constraint firstItem="hNZ-61-WfH" firstAttribute="leading" secondItem="BNp-VR-baA" secondAttribute="leading" constant="15" id="MqW-Rh-xks"/>
+                                    <constraint firstItem="hNZ-61-WfH" firstAttribute="centerX" secondItem="BNp-VR-baA" secondAttribute="centerX" id="W0A-xz-PaD"/>
+                                    <constraint firstAttribute="trailing" secondItem="hNZ-61-WfH" secondAttribute="trailing" constant="14" id="ZfA-6E-Tjf"/>
+                                    <constraint firstAttribute="bottom" secondItem="hNZ-61-WfH" secondAttribute="bottom" constant="10" id="kfX-yO-bpm"/>
+                                    <constraint firstItem="ml2-fB-usM" firstAttribute="top" secondItem="BNp-VR-baA" secondAttribute="top" constant="18" id="nHb-Mr-Xwt"/>
+                                    <constraint firstItem="ml2-fB-usM" firstAttribute="centerX" secondItem="BNp-VR-baA" secondAttribute="centerX" id="ocF-GZ-ifa"/>
+                                    <constraint firstItem="hNZ-61-WfH" firstAttribute="top" secondItem="ml2-fB-usM" secondAttribute="bottom" constant="8" symbolic="YES" id="s3a-2A-tOi"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="BNp-VR-baA" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="5j9-x7-KIO"/>
+                            <constraint firstItem="BNp-VR-baA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="R07-XX-Z9q"/>
+                            <constraint firstAttribute="trailing" secondItem="BNp-VR-baA" secondAttribute="trailing" id="Taj-MW-J1K"/>
+                            <constraint firstItem="BNp-VR-baA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ltK-FU-Lqc"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="barChartView" destination="ml2-fB-usM" id="SG9-dH-rCR"/>
+                        <outlet property="pieChartView" destination="hNZ-61-WfH" id="n6X-J8-PdE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="215" y="436"/>
         </scene>
     </scenes>
 </document>
