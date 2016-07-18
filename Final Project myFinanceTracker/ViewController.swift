@@ -23,8 +23,6 @@ class ViewController: UIViewController {
         let unitsSold = [200.0, 400.0, 600.0, 300.0, 100.0, 50.0, 101.1]
         
         setChart(months, values: unitsSold)
-        
-        barChartView.noDataText = "You need to provide data for the chart."
     }
     
     func setChart(dataPoints: [String], values: [Double]) {

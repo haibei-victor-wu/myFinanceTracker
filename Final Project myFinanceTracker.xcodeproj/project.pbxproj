@@ -16,6 +16,21 @@
 		D25DA8461D32A80C004FA4AA /* money_box.png in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8451D32A80C004FA4AA /* money_box.png */; };
 		D25DA8651D3354CD004FA4AA /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D25DA85E1D335440004FA4AA /* Charts.framework */; };
 		D25DA8661D3354CD004FA4AA /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D25DA85E1D335440004FA4AA /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D25DA86B1D3488E0004FA4AA /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DA86A1D3488E0004FA4AA /* HomeViewController.swift */; };
+		D25DA86F1D349F40004FA4AA /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = D25DA86E1D349F40004FA4AA /* plus.png */; };
+		D2977E171D375615001A74F6 /* receive_cash.png in Resources */ = {isa = PBXBuildFile; fileRef = D2977E161D375615001A74F6 /* receive_cash.png */; };
+		D2977E191D375621001A74F6 /* card_in_use.png in Resources */ = {isa = PBXBuildFile; fileRef = D2977E181D375621001A74F6 /* card_in_use.png */; };
+		D2977E1B1D375659001A74F6 /* check_book.png in Resources */ = {isa = PBXBuildFile; fileRef = D2977E1A1D375659001A74F6 /* check_book.png */; };
+		D2977E1D1D387FE8001A74F6 /* wallet.png in Resources */ = {isa = PBXBuildFile; fileRef = D2977E1C1D387FE8001A74F6 /* wallet.png */; };
+		D2977E201D38A554001A74F6 /* AddNewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2977E1F1D38A554001A74F6 /* AddNewViewController.swift */; };
+		D2977E221D38A660001A74F6 /* calendar.png in Resources */ = {isa = PBXBuildFile; fileRef = D2977E211D38A660001A74F6 /* calendar.png */; };
+		D2977E241D3965BF001A74F6 /* CashFlowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2977E231D3965BF001A74F6 /* CashFlowService.swift */; };
+		D2977E291D3966B2001A74F6 /* CashFlow+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2977E271D3966B2001A74F6 /* CashFlow+CoreDataProperties.swift */; };
+		D2977E2A1D3966B2001A74F6 /* CashFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2977E281D3966B2001A74F6 /* CashFlow.swift */; };
+		D2D0EBA31D3B41CB00907085 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0EBA21D3B41CB00907085 /* CategoryViewController.swift */; };
+		D2D0EBA81D3BCE7200907085 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0EBA71D3BCE7200907085 /* CategoryTableViewCell.swift */; };
+		D2D0EBAB1D3BDBD300907085 /* TransactionDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0EBAA1D3BDBD300907085 /* TransactionDetailTableViewController.swift */; };
+		D2D0EBAD1D3BE08100907085 /* TransactionDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2D0EBAC1D3BE08100907085 /* TransactionDetailViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +96,21 @@
 		D25DA83E1D32A380004FA4AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D25DA8451D32A80C004FA4AA /* money_box.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = money_box.png; sourceTree = "<group>"; };
 		D25DA8561D335440004FA4AA /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = Charts/Charts.xcodeproj; sourceTree = "<group>"; };
+		D25DA86A1D3488E0004FA4AA /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D25DA86E1D349F40004FA4AA /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		D2977E161D375615001A74F6 /* receive_cash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = receive_cash.png; sourceTree = "<group>"; };
+		D2977E181D375621001A74F6 /* card_in_use.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = card_in_use.png; sourceTree = "<group>"; };
+		D2977E1A1D375659001A74F6 /* check_book.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check_book.png; sourceTree = "<group>"; };
+		D2977E1C1D387FE8001A74F6 /* wallet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallet.png; sourceTree = "<group>"; };
+		D2977E1F1D38A554001A74F6 /* AddNewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNewViewController.swift; sourceTree = "<group>"; };
+		D2977E211D38A660001A74F6 /* calendar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = calendar.png; sourceTree = "<group>"; };
+		D2977E231D3965BF001A74F6 /* CashFlowService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashFlowService.swift; sourceTree = "<group>"; };
+		D2977E271D3966B2001A74F6 /* CashFlow+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CashFlow+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D2977E281D3966B2001A74F6 /* CashFlow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CashFlow.swift; sourceTree = "<group>"; };
+		D2D0EBA21D3B41CB00907085 /* CategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		D2D0EBA71D3BCE7200907085 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		D2D0EBAA1D3BDBD300907085 /* TransactionDetailTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailTableViewController.swift; sourceTree = "<group>"; };
+		D2D0EBAC1D3BE08100907085 /* TransactionDetailViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransactionDetailViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +128,8 @@
 		D25DA8231D32A380004FA4AA = {
 			isa = PBXGroup;
 			children = (
+				D2977E271D3966B2001A74F6 /* CashFlow+CoreDataProperties.swift */,
+				D2977E281D3966B2001A74F6 /* CashFlow.swift */,
 				D25DA8561D335440004FA4AA /* Charts.xcodeproj */,
 				D25DA82E1D32A380004FA4AA /* Final Project myFinanceTracker */,
 				D25DA82D1D32A380004FA4AA /* Products */,
@@ -115,9 +147,16 @@
 		D25DA82E1D32A380004FA4AA /* Final Project myFinanceTracker */ = {
 			isa = PBXGroup;
 			children = (
+				D2D0EBA91D3BD3A800907085 /* Libraries */,
 				D25DA8441D32A7E5004FA4AA /* Images */,
 				D25DA82F1D32A380004FA4AA /* AppDelegate.swift */,
+				D25DA86A1D3488E0004FA4AA /* HomeViewController.swift */,
+				D2977E1F1D38A554001A74F6 /* AddNewViewController.swift */,
 				D25DA8311D32A380004FA4AA /* ViewController.swift */,
+				D2D0EBA71D3BCE7200907085 /* CategoryTableViewCell.swift */,
+				D2D0EBA21D3B41CB00907085 /* CategoryViewController.swift */,
+				D2D0EBAA1D3BDBD300907085 /* TransactionDetailTableViewController.swift */,
+				D2D0EBAC1D3BE08100907085 /* TransactionDetailViewCell.swift */,
 				D25DA8331D32A380004FA4AA /* Main.storyboard */,
 				D25DA8391D32A380004FA4AA /* Assets.xcassets */,
 				D25DA83B1D32A380004FA4AA /* LaunchScreen.storyboard */,
@@ -130,6 +169,12 @@
 		D25DA8441D32A7E5004FA4AA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D2977E211D38A660001A74F6 /* calendar.png */,
+				D2977E1C1D387FE8001A74F6 /* wallet.png */,
+				D2977E1A1D375659001A74F6 /* check_book.png */,
+				D2977E181D375621001A74F6 /* card_in_use.png */,
+				D2977E161D375615001A74F6 /* receive_cash.png */,
+				D25DA86E1D349F40004FA4AA /* plus.png */,
 				D25DA8451D32A80C004FA4AA /* money_box.png */,
 			);
 			name = Images;
@@ -144,6 +189,14 @@
 				D25DA8641D335440004FA4AA /* ChartsTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		D2D0EBA91D3BD3A800907085 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				D2977E231D3965BF001A74F6 /* CashFlowService.swift */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,8 +296,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2977E171D375615001A74F6 /* receive_cash.png in Resources */,
+				D2977E1D1D387FE8001A74F6 /* wallet.png in Resources */,
+				D2977E1B1D375659001A74F6 /* check_book.png in Resources */,
 				D25DA8461D32A80C004FA4AA /* money_box.png in Resources */,
+				D25DA86F1D349F40004FA4AA /* plus.png in Resources */,
 				D25DA83D1D32A380004FA4AA /* LaunchScreen.storyboard in Resources */,
+				D2977E191D375621001A74F6 /* card_in_use.png in Resources */,
+				D2977E221D38A660001A74F6 /* calendar.png in Resources */,
 				D25DA83A1D32A380004FA4AA /* Assets.xcassets in Resources */,
 				D25DA8351D32A380004FA4AA /* Main.storyboard in Resources */,
 			);
@@ -257,9 +316,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2D0EBAB1D3BDBD300907085 /* TransactionDetailTableViewController.swift in Sources */,
+				D2977E2A1D3966B2001A74F6 /* CashFlow.swift in Sources */,
+				D2977E201D38A554001A74F6 /* AddNewViewController.swift in Sources */,
 				D25DA8321D32A380004FA4AA /* ViewController.swift in Sources */,
+				D2977E291D3966B2001A74F6 /* CashFlow+CoreDataProperties.swift in Sources */,
+				D2977E241D3965BF001A74F6 /* CashFlowService.swift in Sources */,
+				D2D0EBAD1D3BE08100907085 /* TransactionDetailViewCell.swift in Sources */,
+				D2D0EBA81D3BCE7200907085 /* CategoryTableViewCell.swift in Sources */,
 				D25DA8381D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld in Sources */,
 				D25DA8301D32A380004FA4AA /* AppDelegate.swift in Sources */,
+				D2D0EBA31D3B41CB00907085 /* CategoryViewController.swift in Sources */,
+				D25DA86B1D3488E0004FA4AA /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +487,7 @@
 				D25DA8431D32A380004FA4AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
