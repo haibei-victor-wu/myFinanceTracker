@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D226B2F31D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B2F21D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift */; };
 		D25DA8301D32A380004FA4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DA82F1D32A380004FA4AA /* AppDelegate.swift */; };
 		D25DA8321D32A380004FA4AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DA8311D32A380004FA4AA /* ViewController.swift */; };
 		D25DA8351D32A380004FA4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8331D32A380004FA4AA /* Main.storyboard */; };
@@ -86,6 +87,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D226B2F21D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySummaryTableViewCell.swift; sourceTree = "<group>"; };
 		D25DA82C1D32A380004FA4AA /* Final Project myFinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project myFinanceTracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25DA82F1D32A380004FA4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D25DA8311D32A380004FA4AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				D25DA8311D32A380004FA4AA /* ViewController.swift */,
 				D2D0EBA71D3BCE7200907085 /* CategoryTableViewCell.swift */,
 				D2D0EBA21D3B41CB00907085 /* CategoryViewController.swift */,
+				D226B2F21D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift */,
 				D2D0EBAA1D3BDBD300907085 /* TransactionDetailTableViewController.swift */,
 				D2D0EBAC1D3BE08100907085 /* TransactionDetailViewCell.swift */,
 				D25DA8331D32A380004FA4AA /* Main.storyboard */,
@@ -319,6 +322,7 @@
 				D2D0EBAB1D3BDBD300907085 /* TransactionDetailTableViewController.swift in Sources */,
 				D2977E2A1D3966B2001A74F6 /* CashFlow.swift in Sources */,
 				D2977E201D38A554001A74F6 /* AddNewViewController.swift in Sources */,
+				D226B2F31D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift in Sources */,
 				D25DA8321D32A380004FA4AA /* ViewController.swift in Sources */,
 				D2977E291D3966B2001A74F6 /* CashFlow+CoreDataProperties.swift in Sources */,
 				D2977E241D3965BF001A74F6 /* CashFlowService.swift in Sources */,

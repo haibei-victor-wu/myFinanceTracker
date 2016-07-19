@@ -18,8 +18,9 @@ class HomeViewController: UITableViewController
     @IBOutlet weak var balanceLabel: UILabel!
     @IBOutlet weak var incomeLabel: UILabel!
     @IBOutlet weak var expenseLabel: UILabel!
+
     
-    let greyColor:UIColor = UIColor.init(red: 220/255, green: 220.0/255.0, blue: 220.0/255.0, alpha: 1.0)
+    let greyColor:UIColor = UIColor.init(red: 52/255, green: 74/255.0, blue: 95/255.0, alpha: 1.0)
     var categories: Array<String>!
     
     override func viewWillAppear(animated: Bool) {

@@ -32,11 +32,11 @@ class CategoryViewController: UITableViewController
         let cashFlowService = CashFlowService(context: context)
         
         if(type == "income") {
-            group = ["Salary", "Deposits", "Rental", "Other Income"]
+            group = ["Summary", "Salary", "Deposits", "Rental", "Other Income"]
             let predicate1 = NSPredicate(format: "type == %@", "1")
             groupData = cashFlowService.get(withPredicate: predicate1)
         } else {
-            group = ["Clothing", "Transport", "Entertainment", "Dining"]
+            group = ["Summary", "Clothing", "Transport", "Entertainment", "Dining"]
             let predicate1 = NSPredicate(format: "type == %@", "0")
             groupData = cashFlowService.get(withPredicate: predicate1)
         }
@@ -47,11 +47,34 @@ class CategoryViewController: UITableViewController
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("category") as! CategoryTableViewCell
-        let categoryName = group[indexPath.row]
-        let categoryAmount = getGroupAmount(categoryName)
-        cell.setGroup(categoryName, amount: categoryAmount, type: self.type)
-        return cell
+        if(indexPath.row == 0) {
+            let summaryCell = tableView.dequeueReusableCellWithIdentifier("summary") as! CategorySummaryTableViewCell
+            summaryCell.loadChart(Array(group[1..<5]), amounts: getSummaryAmounts())
+            return summaryCell
+            
+        } else {
+            let cell = tableView.dequeueReusableCellWithIdentifier("category") as! CategoryTableViewCell
+            let categoryName = group[indexPath.row]
+            let categoryAmount = getGroupAmount(categoryName)
+            cell.setGroup(categoryName, amount: categoryAmount, type: self.type)
+            return cell
+        }
+    }
+    
+    func getSummaryAmounts() -> Array<Double>{
+        var amountsArray: Array<Double> = Array<Double>()
+        for i in 1 ..< group.count
+        {
+            amountsArray.append(getGroupAmount(group[i]))
+        }
+        return amountsArray
+    }
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == 0 {
+            return 250
+        }
+        return 44
     }
     
     func getGroupAmount(name:String) -> Double{

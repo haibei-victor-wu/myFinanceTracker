@@ -88,23 +88,7 @@
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fKq-IH-cgh" customClass="PieChartView" customModule="Charts">
                                                     <rect key="frame" x="0.0" y="56" width="320" height="319"/>
-                                                    <subviews>
-                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DS9-Bl-hLr">
-                                                            <rect key="frame" x="280" y="280" width="32" height="32"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="32" id="fku-eg-kL1"/>
-                                                            </constraints>
-                                                            <state key="normal" title="Button" image="plus.png"/>
-                                                            <connections>
-                                                                <segue destination="xxV-za-iAI" kind="show" identifier="addNew" id="vHW-5o-xaW"/>
-                                                            </connections>
-                                                        </button>
-                                                    </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstItem="DS9-Bl-hLr" firstAttribute="bottom" secondItem="fKq-IH-cgh" secondAttribute="bottomMargin" constant="1" id="SdT-kF-e9Y"/>
-                                                        <constraint firstAttribute="trailing" secondItem="DS9-Bl-hLr" secondAttribute="trailing" constant="8" id="Wnm-Iq-1DG"/>
-                                                    </constraints>
                                                 </view>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u0d-5R-Pc8">
                                                     <rect key="frame" x="8" y="2" width="304" height="52"/>
@@ -206,7 +190,21 @@
                             <outlet property="delegate" destination="MVF-Tr-KNf" id="JpL-sa-x1M"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Expense Tracker" id="NWR-sS-QQs"/>
+                    <navigationItem key="navigationItem" title="Expense Tracker" id="NWR-sS-QQs">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="BO6-AJ-w1z">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="DS9-Bl-hLr">
+                                <rect key="frame" x="272" y="6" width="32" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="fku-eg-kL1"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="plus.png"/>
+                                <connections>
+                                    <segue destination="xxV-za-iAI" kind="show" identifier="addNew" id="vHW-5o-xaW"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="balanceLabel" destination="Wv5-mI-mEw" id="CWA-K0-y65"/>
@@ -501,6 +499,24 @@
                                     <outlet property="amountLabel" destination="c0a-Hs-HUo" id="dLL-1a-Nx2"/>
                                     <outlet property="groupNameLabel" destination="HFc-q7-Fsn" id="AFb-Pr-h8d"/>
                                     <segue destination="lud-Vj-8L1" kind="show" id="u3l-EY-cPw"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="summary" rowHeight="220" id="6mg-TE-iLm" customClass="CategorySummaryTableViewCell" customModule="Final_Project_myFinanceTracker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="136" width="320" height="220"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6mg-TE-iLm" id="0f6-tT-7ur">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="219"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleAspectFit" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jqr-0n-miT" customClass="HorizontalBarChartView" customModule="Charts">
+                                            <rect key="frame" x="8" y="8" width="304" height="220"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="barChartView" destination="jqr-0n-miT" id="fZB-Wz-SaY"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
