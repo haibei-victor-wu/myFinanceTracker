@@ -46,8 +46,8 @@ class CategorySummaryTableViewCell: UITableViewCell
         }
         
         let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "")
-        let test = ["Salary", "Deposits", "Rental", "Other Income"].reverse() as Array<String>
-        let chartData = BarChartData(xVals: test, dataSet: chartDataSet)
+        let reverseCategories = categories.reverse() as Array<String>
+        let chartData = BarChartData(xVals: reverseCategories, dataSet: chartDataSet)
         
         barChartView.data = chartData
     }

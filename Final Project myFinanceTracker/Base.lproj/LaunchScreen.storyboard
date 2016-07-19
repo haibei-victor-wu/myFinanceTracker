@@ -14,10 +14,39 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Amz-p4-HXJ">
+                                <rect key="frame" x="0.0" y="0.0" width="566" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Expense Tracker" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ce5-PO-foT">
+                                        <rect key="frame" x="75" y="226" width="183" height="85"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="85" id="qXQ-8r-c4y"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20392156862745098" green="0.29019607843137252" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="ce5-PO-foT" firstAttribute="leading" secondItem="Amz-p4-HXJ" secondAttribute="leading" constant="75" id="JgG-Nc-HUS"/>
+                                    <constraint firstItem="ce5-PO-foT" firstAttribute="centerY" secondItem="Amz-p4-HXJ" secondAttribute="centerY" constant="-15.5" id="hKD-5N-fuX"/>
+                                    <constraint firstItem="ce5-PO-foT" firstAttribute="centerX" secondItem="Amz-p4-HXJ" secondAttribute="centerX" constant="-116.5" id="kyU-FU-MAL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Amz-p4-HXJ" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="FZE-6F-UAi"/>
+                            <constraint firstItem="Amz-p4-HXJ" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="lEt-3s-P5k"/>
+                            <constraint firstAttribute="trailing" secondItem="Amz-p4-HXJ" secondAttribute="trailing" constant="-246" id="mF1-8U-6ou"/>
+                            <constraint firstItem="Amz-p4-HXJ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="tnk-qP-g1Q"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -51,7 +51,6 @@ class CategoryViewController: UITableViewController
             let summaryCell = tableView.dequeueReusableCellWithIdentifier("summary") as! CategorySummaryTableViewCell
             summaryCell.loadChart(Array(group[1..<5]), amounts: getSummaryAmounts())
             return summaryCell
-            
         } else {
             let cell = tableView.dequeueReusableCellWithIdentifier("category") as! CategoryTableViewCell
             let categoryName = group[indexPath.row]
