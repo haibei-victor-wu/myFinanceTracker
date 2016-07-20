@@ -21,6 +21,9 @@ class HomeViewController: UITableViewController
 
     
     let greyColor:UIColor = UIColor.init(red: 52/255, green: 74/255.0, blue: 95/255.0, alpha: 1.0)
+    let red = UIColor.init(red: 250/255, green: 128/255.0, blue: 144/255.0, alpha: 1.0)
+    let green = UIColor.init(red: 67/255, green: 205/255.0, blue: 128/255.0, alpha: 1.0)
+    let backgroudColor:UIColor = UIColor.init(red: 237/255, green: 242/255.0, blue: 246/255.0, alpha: 1.0)
     var categories: Array<String>!
     
     override func viewWillAppear(animated: Bool) {
@@ -50,9 +53,10 @@ class HomeViewController: UITableViewController
         let totalAmount = allIncomesAmount + allExpensesAmount
         
         balanceLabel.text = allIncomesAmount > allExpensesAmount ? "$\(allIncomesAmount - allExpensesAmount)" : "($\(allExpensesAmount - allIncomesAmount))"
+        balanceLabel.textColor = allIncomesAmount < allExpensesAmount ? red : green
         
-        incomeLabel.text = "\(allIncomesAmount)"
-        expenseLabel.text = "(\(allExpensesAmount))"
+        incomeLabel.text = "$\(allIncomesAmount)"
+        expenseLabel.text = "($\(allExpensesAmount))"
         
         if (totalAmount > 0) {
             let incomePercentage = allIncomesAmount / totalAmount
@@ -94,10 +98,9 @@ class HomeViewController: UITableViewController
         pieChartView.data = pieChartData
         pieChartView.descriptionText = ""
         pieChartView.legend.enabled = false
+        pieChartView.backgroundColor = backgroudColor
         //pieChartView.centerText = "Balance: ($1000)"
         
-        let red = UIColor.init(red: 250/255, green: 128/255.0, blue: 144/255.0, alpha: 1.0)
-        let green = UIColor.init(red: 67/255, green: 205/255.0, blue: 128/255.0, alpha: 1.0)
         let colors: [UIColor] = [green, red]
         pieChartDataSet.colors = colors
     }

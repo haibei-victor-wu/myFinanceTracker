@@ -17,6 +17,8 @@ class CategoryViewController: UITableViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.backgroundColor = UIColor.getBackgroundColor()
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -56,6 +58,7 @@ class CategoryViewController: UITableViewController
             let categoryName = group[indexPath.row]
             let categoryAmount = getGroupAmount(categoryName)
             cell.setGroup(categoryName, amount: categoryAmount, type: self.type)
+            cell.backgroundColor = UIColor.getBackgroundColor()
             return cell
         }
     }

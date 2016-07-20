@@ -36,6 +36,8 @@ class CategorySummaryTableViewCell: UITableViewCell
         barChartView.highlightPerDragEnabled = false
         barChartView.drawHighlightArrowEnabled = false
         
+        barChartView.backgroundColor = UIColor.getBackgroundColor()
+        
         var dataEntries: [BarChartDataEntry] = []
         
         var j = 0;
@@ -46,6 +48,7 @@ class CategorySummaryTableViewCell: UITableViewCell
         }
         
         let chartDataSet = BarChartDataSet(yVals: dataEntries, label: "")
+        chartDataSet.setColors([UIColor.brownColor(), UIColor.blueColor(), UIColor.greenColor(), UIColor.redColor()], alpha: 0.2)
         let reverseCategories = categories.reverse() as Array<String>
         let chartData = BarChartData(xVals: reverseCategories, dataSet: chartDataSet)
         

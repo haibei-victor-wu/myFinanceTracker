@@ -28,6 +28,8 @@ class AddNewViewController: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.backgroundColor = UIColor.getBackgroundColor()
+        
         initCatories()
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(AddNewViewController.viewTapped))
@@ -130,7 +132,34 @@ class AddNewViewController: UIViewController
         clearForm()
     }
     
+    func isFormInValid() -> Bool
+    {
+        return dateTextField.text!.isEmpty || amountTextField.text!.isEmpty || selectedCategory == nil
+    }
+    
+    func getFirstEmptyFieldString() -> String {
+        var emptyFieldsString:String = ""
+        if self.dateTextField.text!.isEmpty {
+            emptyFieldsString += "Date"
+        } else if (self.amountTextField.text!.isEmpty){
+            emptyFieldsString += "Amount"
+        } else if (self.selectedCategory == nil) {
+            emptyFieldsString += "Category"
+        }
+        return emptyFieldsString
+    }
+    
     @IBAction func save(sender: UIButton) {
+        if(self.isFormInValid()) {
+            let emptyFieldString:String = self.getFirstEmptyFieldString()
+            
+            let errorAlertController = UIAlertController(title: "Error", message: "\(emptyFieldString) Field Empty", preferredStyle: .Alert)
+            let okayWithoutClearAction = UIAlertAction(title: "Okay", style: .Cancel, handler: nil)
+            errorAlertController.addAction(okayWithoutClearAction)
+            self.presentViewController(errorAlertController, animated: true, completion: nil)
+            return;
+        }
+        
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         let cashFlowService = CashFlowService(context: managedContext)
@@ -149,6 +178,7 @@ class AddNewViewController: UIViewController
         initCatories()
         clearHighlightButton()
         amountTextField.text = ""
+        selectedCategory = nil
     }
     
     func resetButtonStyle(button: UIButton) {

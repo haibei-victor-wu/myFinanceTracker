@@ -16,7 +16,8 @@ class TransactionDetailTableViewController: UITableViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tableView.backgroundColor = UIColor.getBackgroundColor()
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
         navigationItem.rightBarButtonItem = editButtonItem()
     }
     
@@ -42,6 +43,8 @@ class TransactionDetailTableViewController: UITableViewController
         let cashFlow = groupData[indexPath.row]
         
         cell.setDetail(cashFlow.date!, amount: Double(cashFlow.amount!), type: self.type)
+        
+        cell.backgroundColor = UIColor.getBackgroundColor()
         
         return cell
     }
