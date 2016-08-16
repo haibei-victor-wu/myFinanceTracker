@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D226B2F31D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D226B2F21D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift */; };
 		D249C79F1D4005AB000FE3B9 /* myColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D249C79E1D4005AB000FE3B9 /* myColor.swift */; };
+		D249C7A41D4041DD000FE3B9 /* gender_neutral_user.png in Resources */ = {isa = PBXBuildFile; fileRef = D249C7A31D4041DD000FE3B9 /* gender_neutral_user.png */; };
 		D25DA8301D32A380004FA4AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25DA82F1D32A380004FA4AA /* AppDelegate.swift */; };
 		D25DA8351D32A380004FA4AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D25DA8331D32A380004FA4AA /* Main.storyboard */; };
 		D25DA8381D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D25DA8361D32A380004FA4AA /* Final_Project_myFinanceTracker.xcdatamodeld */; };
@@ -89,6 +90,7 @@
 /* Begin PBXFileReference section */
 		D226B2F21D3DA68000DC7D32 /* CategorySummaryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategorySummaryTableViewCell.swift; sourceTree = "<group>"; };
 		D249C79E1D4005AB000FE3B9 /* myColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myColor.swift; sourceTree = "<group>"; };
+		D249C7A31D4041DD000FE3B9 /* gender_neutral_user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gender_neutral_user.png; sourceTree = "<group>"; };
 		D25DA82C1D32A380004FA4AA /* Final Project myFinanceTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project myFinanceTracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D25DA82F1D32A380004FA4AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D25DA8341D32A380004FA4AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 		D25DA8441D32A7E5004FA4AA /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				D249C7A31D4041DD000FE3B9 /* gender_neutral_user.png */,
 				D2977E211D38A660001A74F6 /* calendar.png */,
 				D2977E1C1D387FE8001A74F6 /* wallet.png */,
 				D2977E1A1D375659001A74F6 /* check_book.png */,
@@ -308,6 +311,7 @@
 				D2977E191D375621001A74F6 /* card_in_use.png in Resources */,
 				D2977E221D38A660001A74F6 /* calendar.png in Resources */,
 				D25DA83A1D32A380004FA4AA /* Assets.xcassets in Resources */,
+				D249C7A41D4041DD000FE3B9 /* gender_neutral_user.png in Resources */,
 				D25DA8351D32A380004FA4AA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

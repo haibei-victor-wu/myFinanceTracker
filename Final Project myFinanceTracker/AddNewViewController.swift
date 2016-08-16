@@ -9,8 +9,9 @@
 import Foundation
 import UIKit
 import CoreData
+import MobileCoreServices
 
-class AddNewViewController: UIViewController
+class AddNewViewController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate
 {
     
     @IBOutlet var categoryButtonCollection: [UIButton]!
@@ -18,6 +19,9 @@ class AddNewViewController: UIViewController
     @IBOutlet weak var typeUISegmentedControl: UISegmentedControl!
     @IBOutlet weak var amountTextField: UITextField!
     @IBOutlet weak var dateTextField: UITextField!
+    @IBOutlet weak var receiptImageView: UIImageView!
+    
+    var newMedia: Bool?
     
     let blueColor:UIColor = UIColor.init(red: 0.0, green: 122.0/255.0, blue: 1.0, alpha: 1.0)
     
@@ -25,6 +29,37 @@ class AddNewViewController: UIViewController
     let expenseCategory = ["Salary", "Deposits", "Rental", "Other Income"]
     var selectedCategory:String!
     
+    @IBAction func openPhotoLibraryButton(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(UIImagePickerControllerSourceType.PhotoLibrary) {
+            let imagePicker = UIImagePickerController()
+            imagePicker.delegate = self
+            imagePicker.sourceType = UIImagePickerControllerSourceType.PhotoLibrary;
+            imagePicker.allowsEditing = true
+            self.presentViewController(imagePicker, animated: true, completion: nil)
+        }
+    }
+    
+    func imagePickerController(picker: UIImagePickerController, didFinishPickingImage image: UIImage, editingInfo: [String : AnyObject]?) {
+        receiptImageView.image = image
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+    @IBAction func useCamera(sender: AnyObject) {
+        if UIImagePickerController.isSourceTypeAvailable(
+            UIImagePickerControllerSourceType.Camera) {
+            
+            let imagePicker = UIImagePickerController()
+            
+            imagePicker.delegate = self
+            imagePicker.sourceType =
+                UIImagePickerControllerSourceType.Camera
+            imagePicker.mediaTypes = [kUTTypeImage as NSString as String]
+            imagePicker.allowsEditing = false
+            
+            self.presentViewController(imagePicker, animated: true,
+                                       completion: nil)
+            newMedia = true
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         
